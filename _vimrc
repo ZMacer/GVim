@@ -131,6 +131,8 @@ Plugin 'gmarik/Vundle.vim'
 " 以下为要安装或更新的插件，不同仓库都有（具体书写规范请参考帮助）
 Plugin 'bling/vim-airline'
 
+Plugin 'flazz/vim-colorschemes'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " -----------------------------------------------------------------------------
@@ -207,7 +209,7 @@ set number                                            "显示行号
 set laststatus=2                                      "启用状态栏信息
 set cmdheight=2                                       "设置命令行的高度为2，默认为1
 set cursorline                                        "突出显示当前行
-" set guifont=YaHei_Consolas_Hybrid:h10                 "设置字体:字号（字体名称空格用下划线代替）
+set guifont=Monaco:h14                                "设置字体:字号（字体名称空格用下划线代替）
 set nowrap                                            "设置不自动换行
 set shortmess=atI                                     "去掉欢迎界面
  
@@ -219,11 +221,12 @@ if g:isGUI
 endif
  
 " 设置代码配色方案
-"if g:isGUI
- "   colorscheme Tomorrow-Night-Eighties               "Gvim配色方案
-"else
-  "  colorscheme Tomorrow-Night-Eighties               "终端配色方案
-"endif
+set background=dark
+if g:isGUI
+    colorscheme darkBlue               "Gvim配色方案
+else
+    colorscheme darkBlue               "终端配色方案
+endif
  
 " 显示/隐藏菜单栏、工具栏、滚动条，可用 Ctrl + F11 切换
 if g:isGUI
