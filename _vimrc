@@ -131,7 +131,11 @@ Plugin 'gmarik/Vundle.vim'
 " 以下为要安装或更新的插件，不同仓库都有（具体书写规范请参考帮助）
 Plugin 'bling/vim-airline'
 
-Plugin 'flazz/vim-colorschemes'
+Plugin 'flazz/vim-colorschemes' "各种配色方案
+
+Plugin 'fatih/vim-go'
+"Plugin 'nsf/gocode', {'rtp': 'vim/'}  "golang 自动补全
+":GoInstallBinaries
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -270,9 +274,13 @@ let g:airline#extensions#tabline#enabled = 1
 
 
 " ----------------------------------------------------------------------------
-"  < powerline 插件配置 >
+"  < vim-go 插件配置 >
 " -----------------------------------------------------------------------------
-" 状态栏插件，更好的状态栏效果
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
  
 " ----------------------------------------------------------------------------
 "  < repeat 插件配置 >
