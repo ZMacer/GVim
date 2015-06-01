@@ -276,6 +276,7 @@ let g:airline#extensions#tabline#enabled = 1
 " ----------------------------------------------------------------------------
 "  < vim-go 插件配置 >
 " -----------------------------------------------------------------------------
+"  :GoRun % 编译运行当前文件
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
