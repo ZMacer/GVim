@@ -135,6 +135,8 @@ Plugin 'flazz/vim-colorschemes' "各种配色方案
 
 Plugin 'jiangmiao/auto-pairs' "括号补全
 Plugin 'fatih/vim-go'
+Plugin 'ervandew/supertab'
+
 "Plugin 'nsf/gocode', {'rtp': 'vim/'}  "golang 自动补全
 ":GoInstallBinaries
 
